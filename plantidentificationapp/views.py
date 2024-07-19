@@ -11,8 +11,8 @@ from .serializers import SerializerAPI1, SerializerAPI2
 class API1View(APIView):
     def get(self, request):
         data = [
-            {"name": "Item 1", "value": 10},
-            {"name": "Item 2", "value": 20},
+            {"name": "Weight", "value": 10},
+            {"name": "Height", "value": 20},
         ]
         return Response(data, status=status.HTTP_200_OK)
 
@@ -25,8 +25,8 @@ class API1View(APIView):
 class API2View(APIView):
     def get(self, request):
         data = [
-            {"name": "Item 1", "value": 10},
-            {"name": "Item 2", "value": 20},
+            {"name": "Weight", "value": 15},
+            {"name": "Height", "value": 30},
         ]
         return Response(data, status=status.HTTP_200_OK)
 
